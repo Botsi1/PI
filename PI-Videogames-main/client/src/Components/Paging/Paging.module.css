@@ -1,0 +1,26 @@
+
+.pagination {
+    list-style-type: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+.pagenr {
+  border: 1px solid black;
+  display: inline-block;
+  height: 22px;
+  width: 20px;
+  color:rgb(255, 255, 255);
+  background-color: rgb(92, 4, 48);
+  padding:2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8x;
+  border-radius: 10px;
+}
+.pagenr:hover {
+    background-color: rgb(26, 145, 85);
+}
+
+span {
+  color:rgb(235, 235, 235);
+}

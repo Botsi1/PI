@@ -1,0 +1,45 @@
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:space-around;
+    padding: 10px;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+
+
+}
+.card {
+    background-color: #076666;
+    height: 250px;
+    width: 250px;
+    margin: 5px;
+    padding: 10px;
+    border:2px solid rgb(128, 21, 95);
+    border-radius: 10px;
+}
+
+h4 {
+    /* color: rgb(246, 241, 241); */
+    margin: 2px;
+    padding: 1px;  
+}
+
+p {
+    margin: 5px;
+    padding: 1px;  
+}
+ .imag {
+    height: 110px;
+    width: 180px; 
+    margin: 1px;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 5px;
+ }
+
+ .rating{
+    text-align: end;
+ }
+ 

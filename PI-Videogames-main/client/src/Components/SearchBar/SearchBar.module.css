@@ -1,0 +1,32 @@
+.sbcontainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+
+}
+.sbbot {
+    border-radius: 35px;
+    border-color: #efece9;
+    list-style: none;
+    color: #f5f4f3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    padding:0px 21px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(128, 21, 95);
+}
+.sbbot:hover {
+    background-color:#076666;
+    color:  white; 
+}
+.sbinput{
+    border: 3px solid black
+}

@@ -1,0 +1,83 @@
+
+.c1 {
+    display:flex;
+    flex-direction: column;
+    align-content:space-around;
+    padding: 10px;
+    background-image: url("../../Img/Back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    min-height: 620px;
+
+  }
+  
+  .c2 {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    padding: 10px;
+    border:3px solid transparent;
+    width: 1200px;
+  }
+  
+  .c3 {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:space-around;
+    padding: 10px;
+  }
+  
+  .c4 {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:space-around;
+    padding: 10px;
+  }
+  
+  .c5 {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:space-around;
+    padding: 10px;
+  }
+  
+  .hpbot {
+    border-radius: 35px;
+    border-color: #efece9;
+    list-style: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 12px 16px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color:  #076666;
+  }
+  .hpbot:hover {
+    background-color: rgb(128, 21, 95);
+    color:  white; 
+  }
+  
+  .hpfilter{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-top: 8px;
+    border: 2px solid rgb(92, 4, 48);
+    height: 40px;
+    background-color:#076666;
+    cursor:grab;
+  }
