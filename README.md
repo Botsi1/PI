@@ -3,5 +3,12 @@ SPA realizada como proyecto individual para un coding bootcamp. En esta app ver√
 
 Used Techonologies:
 *Front-End: ReactJS, Redux, CSS.
+
+
 *Back-End: NodeJS, Express, Sequelize
+
+
+
+
+
 *DB: Postgres
