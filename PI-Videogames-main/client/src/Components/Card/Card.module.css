@@ -1,3 +1,4 @@
+
 .container {
     display:flex;
     flex-direction: row;
@@ -21,7 +22,7 @@
 }
 
 h4 {
-    /* color: rgb(246, 241, 241); */
+    color: rgb(246, 241, 241);
     margin: 2px;
     padding: 1px;  
 }
@@ -43,3 +44,98 @@ p {
     text-align: end;
  }
  
+
+
+
+
+
+
+
+ .card {
+    width: 190px;
+    height: 254px;
+    background: #076666;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+   }
+   
+   .card:hover {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+    background-color: rgb(128, 21, 95);
+   }
+   
+   .card .blob {
+    height: 10px;
+    width: 75%;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+    background-color: #4bb8ff;
+    visibility: visible;
+    transition: all 0.3s;
+   }
+   
+   .card:hover .blob {
+    height: 0;
+   }
+
+
+    .imag {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 137px;
+    height: 96px;
+    background-color: #081a25;
+    border-radius: 20%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card:hover .imag {
+    width: 60px;
+    height: 50px;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    z-index: 99999;
+   }
+   
+   /* .card h4 {
+    padding: 15px 10px;
+    font-size: 25px;
+    transition: all 0.1s;
+    z-index: -99;
+    line-height: 17px;
+   } */
+   
+   .card span {
+    font-size: 18px;
+   }
+   
+   .card:hover h4 {
+    
+    /* position:absolute; */
+    opacity: 0;
+    width: 80%;
+    position: absolute;
+    transition: all 0.5s;
+   }
+   
+   .card>p {
+    /* opacity: 0; */
+    transition: all 0.75s;
+   }
+   
+   .card>p {
+    opacity: 0;
+   }
+   
+   .card:hover>p {
+    position:static;
+    bottom: 15px;
+    left: 35px;
+    opacity: 1;
+    transition: all 0.1s;
+   }

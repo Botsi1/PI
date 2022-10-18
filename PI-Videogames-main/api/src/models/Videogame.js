@@ -26,13 +26,18 @@ module.exports = (sequelize) => {
     },
     platform: {
       type: DataTypes.STRING,
-      allowNull:false
-    }
+      allowNull: false
+    },
+    // flags:{
+    //   type:DataTypes.STRING,
+    //   allowNull:false,
+    // },
 
-    
+
+
   },
-  {timestamps:false}
+    { timestamps: false }
 
-  
+
   );
 };

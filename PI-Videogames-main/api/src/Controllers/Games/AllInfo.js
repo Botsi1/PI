@@ -7,39 +7,22 @@ const getGameById = async (req, res) => {
   try {
     const id = req.params.id
 
+    if (isNaN(id)) {
 
-    var searchdbvg = await Videogame.findAll({
-      include: [{
-        model: Genero,
-        attributes: ['name'],
-        through: {
-          attributes: []
-        }
-      }]
-    });
-    
-    const gamefilt = searchdbvg.filter(e => e.id === id)
+      const game = await Videogame.findAll({
+        where: { id: id },
+        include: [{
+          model: Genero,
+          attributes: ['name'],
+          through: {
+            attributes: []
+          }
 
+        }]
 
-
-    if (gamefilt.length) {
-
-      
-      const objdbgame = gamefilt.map(e => {
-        return {
-          id: e.id,
-          name: e.name,
-          platforms: e.platform, //platform
-          year: e.reldate, //reldate
-          image: "https://t3.ftcdn.net/jpg/01/56/15/04/240_F_156150461_J6D7WvT6Xh80EHxze96PC7ZSnsLW0dE9.jpg",
-          description: e.description,
-          rating: e.rating,
-          genres: e.generos.map((e) => e.name).toString()
-
-        }
       })
-     
-      return res.status(200).send(objdbgame[0])
+
+      return game ? res.send(game) : res.status(400).send("No se pudo completar")
 
 
     } else {
@@ -59,30 +42,26 @@ const getGameById = async (req, res) => {
         description: info.description.replace(/<[^>]+>/g, ''),
       }
 
-
-
-      return info ? res.send(game) : res.status(404).send("no existe el juego")
-
+      return game ? res.send(game) : res.status(404).send("No se encontro el juego")
 
 
 
-
-
-      // return res.status(404).send('Videogame not found');
     }
+
 
 
   } catch (error) {
     console.log(error)
 
   }
+
 }
 
 
 const post = async (req, res) => {
   let { name, description, reldate, image, rating, platform, genre } = req.body;
   platform = platform.toString();
-  console.log("mi imagen:",image)
+  console.log("mi imagen:", image)
   const addVgame = await Videogame.create({
     name,
     description,

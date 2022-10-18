@@ -47,6 +47,7 @@ export default function HomePage() {
     function handleGenreFilter(e) {
         e.preventDefault();
         dispatch(genrefilter(e.target.value))
+        setCurrentPage(1)
     }
 
     function handleOriginFilter(e) {
@@ -57,6 +58,9 @@ export default function HomePage() {
     function handleShowAll(e) {
         dispatch(vgorigin('All'))
         dispatch(sortvgames('asc'))
+        setCurrentPage(1)
+        
+
     }
 
     function handleSortvgames(e) {
@@ -64,6 +68,7 @@ export default function HomePage() {
 
         setRender(`Order ${e.target.value}`)
         dispatch(sortvgames(e.target.value))
+        setCurrentPage(1)
 
     }
 
